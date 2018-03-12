@@ -4,7 +4,9 @@ Generates a table in markdown syntax, and sums a column.
 Useful when you are required for example to keep track of your hours, but you are too lazy to count them yourself.
 
 ### Install
-`npm install git+https://git@github.com/kalppi/md-table-generator.git`
+```bash
+> npm install git+https://git@github.com/kalppi/md-table-generator.git
+```
 
 ### Usage
 Create a package.json script
@@ -20,7 +22,7 @@ Create a package.json script
 > npm run generate-table
 ```
 
-### Config file format example
+### Example config file
 ```yaml
 title: My hours
 output: hours.md
