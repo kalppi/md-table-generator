@@ -41,7 +41,7 @@ columns:
       align: center
     -
       text: hours
-      align: left 
+      align: center 
     -
       text: work
       align: left
@@ -56,7 +56,7 @@ data:
 # My hours
 
 | date | hours | work | 
-| :---: | :--- | :--- | 
+| :---: | :---: | :--- | 
 | 12.3. | 3 | Doing stuff | 
 | 13.2. | 4 | Doing more stuff and not using my time to count hours | 
 | sum. | 7
@@ -64,7 +64,7 @@ data:
 # My hours
 
 | date | hours | work | 
-| :---: | :--- | :--- | 
+| :---: | :---: | :--- | 
 | 12.3. | 3 | Doing stuff | 
 | 13.2. | 4 | Doing more stuff and not using my time to count hours | 
 | sum. | 7
