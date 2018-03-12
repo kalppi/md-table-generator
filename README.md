@@ -22,6 +22,12 @@ Create a package.json script
 > npm run generate-table
 ```
 
+### Without install
+
+```bash
+> npx github:kalppi/md-table-generator table-config.yml
+```
+
 ### Example config file
 ```yaml
 title: My hours
