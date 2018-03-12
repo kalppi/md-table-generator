@@ -1,6 +1,6 @@
 # Markdown table generator
 
-Generates a table in markdown syntax, and sums a column.
+Generates a file with a table in markdown syntax, and sums a column.
 Useful when you are required for example to keep track of your hours, but you are too lazy to count them yourself.
 
 ### Install
