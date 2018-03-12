@@ -8,8 +8,7 @@ if(process.argv.length < 3) return;
 try {
 	const doc = yaml.safeLoad(fs.readFileSync(process.argv[2], 'utf8'));
 
-
-	let output `# ${doc.title}\n\n`;
+	let output = `# ${doc.title}\n\n`;
 	output += '| ';
 
 	for(let column of doc.columns) {
