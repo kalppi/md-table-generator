@@ -1,22 +1,24 @@
 # Markdown table generator
 
-Generates a table in markdown syntax, and sumsa certain column.
-Useful when you are required for example keep track of your hours, but you are too lazy to count them yourself.
+Generates a table in markdown syntax, and sums a column.
+Useful when you are required for example to keep track of your hours, but you are too lazy to count them yourself.
 
 ### Install
 `npm install git+https://git@github.com/kalppi/md-table-generator.git`
 
 ### Usage
 Create a package.json script
-```
+```json
 ...
 "scripts": {
-	"generate-table": "node_modules/.bin/md-table-generator table-config.yml"
+    "generate-table": "node_modules/.bin/md-table-generator table-config.yml"
 }
 ...
 ```
 
-`npm run generate-table`
+```bash
+> npm run generate-table
+```
 
 ### Config file format example
 ```yaml
