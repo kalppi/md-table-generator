@@ -39,6 +39,7 @@ columns:
     -
       text: date
       align: center
+      merge: true
     -
       text: hours
       align: center 
@@ -47,7 +48,8 @@ columns:
       align: left
 data:
     - ['12.3.', 3, 'Doing stuff']
-    - ['13.2.', 4, 'Doing more stuff and not using my time to count hours']
+    - ['12.3.', 2, 'Doing more stuff']
+    - ['13.2.', 4, 'Doing even more stuff and not using my time to count hours']
 
 ```
 
@@ -58,13 +60,15 @@ data:
 | date | hours | work | 
 | :---: | :---: | :--- | 
 | 12.3. | 3 | Doing stuff | 
-| 13.2. | 4 | Doing more stuff and not using my time to count hours | 
-| sum. | 7
+|  | 2 | Doing more stuff | 
+| 13.2. | 4 | Doing even more stuff and not using my time to count hours | 
+| sum. | 9
 ```
 # My hours
 
 | date | hours | work | 
 | :---: | :---: | :--- | 
 | 12.3. | 3 | Doing stuff | 
-| 13.2. | 4 | Doing more stuff and not using my time to count hours | 
-| sum. | 7
+|  | 2 | Doing more stuff | 
+| 13.2. | 4 | Doing even more stuff and not using my time to count hours | 
+| sum. | 9
