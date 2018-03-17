@@ -1,0 +1,24 @@
+title: test
+output: test.md
+sum:
+  text: yht.
+  column: 2
+columns:
+    -
+      text: päivä
+      align: center
+      merge: true
+    -
+      text: aika
+      align: left 
+    -
+      text: mitä tein
+      align: left
+data:
+    - ['12.3.', 1, 'Lorem ipsum dolor.']
+    - ['12.3.', 2, 'Sit amet']
+    - ['12.3.', 2, 'Consectetur adipiscing.']
+    - ['12.3.', 2, 'Maecenas eget posuere leo.']
+    - ['13.3.', 2, 'Nunc posuere.']
+    - ['13.3.', 1, 'Dui quis volutpat vestibulum.']
+    - ['13.3.', 1, 'Aliquam sem.']

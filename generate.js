@@ -18,7 +18,15 @@ try {
 	output += '\n';
 	output += '| ';
 
-	for(let column of doc.columns) {
+	const merge = [];
+
+	for(let index in doc.columns) {
+		const column = doc.columns[index];
+
+		if(column.merge) {
+			merge.push(index);
+		}
+
 		switch(column.align) {
 			case 'left':
 				output += ':---';
@@ -38,6 +46,20 @@ try {
 	output += '| ';
 
 	let sum = 0;
+
+	doc.data.reduce((acc, val) => {
+		for(let index of merge) {
+			if(val[index] === acc.last[index]) {
+				val[index] = '';
+			} else {
+				acc.last[index] = val[index];
+			}
+		}
+
+		acc.data.push(val);
+
+		return acc;
+	}, {last: Array(merge.length).fill(null), data: []});
 
 	for(let row of doc.data) {
 		for(let index in row) {
